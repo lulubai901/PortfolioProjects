@@ -126,7 +126,7 @@ FROM
 WHERE dea.continent IS NOT NULL;
 
 
--- Using CTE to perform Calculation on PART in previous query
+-- Using CTE to perform Calculation on previous query
 
 WITH pop_vs_vac (continent, location, date, population, new_vaccinations, rolling_people_vaccinated)
 AS
@@ -150,7 +150,7 @@ FROM pop_vs_vac;
 
 
 
--- Using Temp Table to perform Calculation on PARTITION BY in previous query
+-- Using Temp Table to perform Calculation on previous query
 
 DROP TABLE IF EXISTS temp_percent_population_vaccinated;
 CREATE TABLE temp_percent_population_vaccinated
