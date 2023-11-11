@@ -82,7 +82,7 @@ GROUP BY location
 ORDER BY total_death_count DESC;
 
 
--- Breaking things down by content
+-- Breaking things down by continent
 --  Continents with the highest death count per population
 
 SELECT
